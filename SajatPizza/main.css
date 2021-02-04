@@ -1,0 +1,66 @@
+body{
+    background-image: url(./kepek/bckgrnd1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.container{
+    width: 1000px;
+    height: 330px;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.register{
+    width: 500px;
+    height: 330px;
+    margin: auto;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 4px;
+}
+.register:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.login{
+    width: 500px;
+    height: 330px;
+    margin: auto;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 4px;
+}
+.login:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+p{
+    font-weight: 800;
+    font-size: 32px;
+    text-shadow: 1px 1px 4px white;
+    border-bottom: 1px solid black;
+}
+label{
+    font-weight: 600;
+    font-size: 24px;
+    text-shadow: 1px 1px 4px white;
+}
+button{
+    margin-top: 10px;
+}
+input{
+    background-color: transparent;
+    font-weight: bold;
+}
