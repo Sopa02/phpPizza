@@ -62,3 +62,56 @@ a:hover{
 .hatter:hover{
     background-color:rgba(255, 255, 255, 0.85);
 }
+
+
+
+@media screen and (max-width: 991px){
+    body{
+        background-image: url(./kepek/tablet-bckgrnd1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .hatter{
+        width: 300px;
+        padding: 50px 25px;
+    }
+    h2{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    .hatter{
+        width: 260px;
+        padding: 40px 10px;
+    }
+    .col-xs-12{
+        margin-bottom: 40px;
+    }
+    .kilep{
+        margin-top: 240px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    body{
+        background-image: url(./kepek/mobil-bckgrnd1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    a{
+        font-size: 30px;
+    }
+    .kilep{
+        font-size: 26px;
+        margin-top: 170px;
+    }
+}

@@ -22,9 +22,9 @@
         </div>
 
 
-        <div class="row row-cols-2">
+        <div class="row">
 
-            <div class="col">
+            <div class="col col-xs-12 col-md-6 col-lg-6 col-xl-6">
                 <div class="hatter" onclick="GoEtlap()"> 
                 <a href="./etlap.php">
                     Étlap
@@ -32,7 +32,7 @@
                 </div>
                 
             </div>
-            <div class="col">
+            <div class="col col-xs-12 col-md-6 col-lg-6 col-xl-6">
                 <div class="hatter" onclick="GoRendeles()">
                 <a href="./rendelesek.php">
                     Rendeléseid
@@ -43,7 +43,7 @@
             
 
         </div>
-        <div class="row row-cols-1">
+        <div class="row">
             <div class="col kilep">
                 <div class="hatter" onclick="Kijelentkezes()">
                     Kijelentkezés

@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Köszönjük, hogy regisztráltál oldalunkon!</h1>
-    <h3>Bejelentkezéshez és rendeléshez kérjük, jelentkezz be <a href="./login-register.php">itt!</a></h3>
+    <h3>Bejelentkezéshez és rendeléshez kérjük, jelentkezz be <a href="./bejelentkezes.php">itt!</a></h3>
 </body>
 </html>

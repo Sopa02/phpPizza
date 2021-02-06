@@ -1,5 +1,5 @@
 <?php
-
+include('connect.php');
 if (isset($_POST['reg_user'])){
     //inputok begyűjtése
 
