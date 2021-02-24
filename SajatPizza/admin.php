@@ -26,7 +26,9 @@
         ORDER BY aktiv desc, ido desc;";
         $result = mysqli_query($db, $query);
         $i = 0;
+        echo "<div class='row'>";
         while($rendeles = mysqli_fetch_assoc($result)){
+            /*
             if($i%4==0){
                 if($i!=0){
                     echo "</div>";
@@ -35,8 +37,8 @@
                 echo "<div class='row row-cols-4'>";
 
             }
-
-            echo "<div class='col'>";
+            */
+            echo "<div class='col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12'>";
             if($rendeles['aktiv'] == '1'){
                 echo "<div class='kartya'>";
             }else{

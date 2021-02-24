@@ -22,17 +22,19 @@
         $query = "SELECT * FROM rendelesek where userID = ".$_SESSION['userID']." ORDER BY aktiv desc, ido desc;";
         $result = mysqli_query($db, $query);
         $i = 0;
+        echo "<div class='row'>";
         while($rendeles = mysqli_fetch_assoc($result)){
+            /*
             if($i%4==0){
                 if($i!=0){
                     echo "</div>";
                 }
 
-                echo "<div class='row row-cols-4'>";
+                echo "<div class='row'>";
 
             }
-
-            echo "<div class='col'>";
+            */
+            echo "<div class='col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12'>";
             if($rendeles['aktiv'] == '1'){
                 echo "<div class='kartya'>";
             }else{
@@ -56,10 +58,14 @@
             
             $i++;
         }
-        echo "</div>"
-
+        echo "</div>";
+        if(mysqli_num_rows($result)==0){
+            echo "<h2>Úgy tűnik, még nincsenek rendeléseid!</h2>";
+        }
 
     ?>
     </div>
+    <div class="vissza"><button onclick="FoOldalra()">Vissza a főoldalra</button></div>
+    <script src="./script.js"></script>
 </body>
 </html>

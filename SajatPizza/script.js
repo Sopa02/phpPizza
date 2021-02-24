@@ -7,3 +7,6 @@ function GoRendeles(){
 function Kijelentkezes(){
     window.location.href = "./logout.php"
 }
+function FoOldalra(){
+    window.location.href = "./italia.php"
+}

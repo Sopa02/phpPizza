@@ -21,23 +21,25 @@
         $query = "SELECT * FROM ETLAP;";
         $result = mysqli_query($db, $query);
         $i = 0;
+        echo "<div class='row'>";
         while($pizza = mysqli_fetch_assoc($result)){
+            /*
             if($i%4==0){
                 if($i!=0){
                     echo "</div>";
                 }
 
-                echo "<div class='row row-cols-4'>";
+                echo "<div class='row'>";
 
             }
-
-            echo "<div class='col'>";
+            */
+            echo "<div class='col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12'>";
             echo "<div class='kartya'>";
             echo "<img src='".$pizza['kep']."'>";
-            echo "<p>".$pizza['nev']."</p>";
-            echo "<p class='hozzavalok'>".$pizza['hozzavalok']."</p>";
+            echo "<p class='nev'>".$pizza['nev']."</p>";
             echo "<p class='jobb'>".$pizza['ar']."Ft</p>";
-            echo "Rendelni kívánt mennyiség:<input type='number' max='10' min='0' value='0' name='".$pizza['id']."' id='".$pizza['id']."' required>";
+            echo "<p class='hozzavalok'>".$pizza['hozzavalok']."</p>";
+            echo "<div class='mennyiseg'><p>Rendelni kívánt mennyiség:</p><input type='number' max='10' min='0' value='0' name='".$pizza['id']."' id='".$pizza['id']."' required></div>";
             echo "</div>";
             echo "</div>";
             
@@ -64,7 +66,8 @@
         <br>
         <button type="submit" name="rendeles">Rendelés!</button>
     </div>
-        
     </form>
+    <div class="vissza"><button onclick="FoOldalra()">Vissza a főoldalra</button></div>
+    <script src="./script.js"></script>
 </body>
 </html>
