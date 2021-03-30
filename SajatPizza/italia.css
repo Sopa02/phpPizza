@@ -1,17 +1,8 @@
 body{
-    background-image: url(./kepek/bckgrnd2.jpg);
+    background-image: url(./kepek/tablet-bckgrnd1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-h1{
-    text-align: center;
-    margin: auto;
-    font-size: 50px;
-    background-color: rgba(255, 255, 255, 0.705);
-    padding: 10px;
-    border-radius: 10px;
-    text-transform: uppercase;
 }
 h2{
     width: 30%;
@@ -21,18 +12,27 @@ h2{
     text-align: center;
     font-size: 28px;
     font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.705);
+    background-color: #222222;
+    color: white;
     width: 35%;
     border-radius: 10px;
 }
-
-a{
+.container{
+    margin-top: 120px;
+}
+.navbar-brand{
+    font-size: 36px;
+}
+.mb-1{
+    font-size: 18px;
+}
+.container a{
     color: black;
     text-decoration: none;
     font-weight: 600;
     font-size: 38px;
 }
-a:hover{
+.container a:hover{
     color: black;
 }
 .kilep{
@@ -53,7 +53,7 @@ a:hover{
 .hatter{
     width: 450px;
     margin: auto;
-    background-color:rgba(255, 255, 255, 0.65);
+    background-color:rgba(255, 255, 255, 0.7);
     padding: 60px 25px;
     border-radius: 4px;
     transition: background-color 300ms;
@@ -67,7 +67,7 @@ a:hover{
 
 @media screen and (max-width: 991px){
     body{
-        background-image: url(./kepek/tablet-bckgrnd1.jpg);
+        
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -82,9 +82,7 @@ a:hover{
 }
 
 @media screen and (max-width: 768px){
-    h1{
-        font-size: 32px;
-    }
+
     h2{
         font-size: 26px;
     }
@@ -100,14 +98,19 @@ a:hover{
     }
     
 }
-@media screen and (max-width: 600px){
-    body{
-        background-image: url(./kepek/mobil-bckgrnd1.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+@media screen and (max-width: 650px){
+    .navbar-brand{
+        font-size: 28px;
     }
-    a{
+    .mb-1{
+        font-size: 14px;
+    }
+    .navbar-brand img{
+        height: 45px;
+    }
+}
+@media screen and (max-width: 600px){
+    .container a{
         font-size: 30px;
     }
     .kilep{

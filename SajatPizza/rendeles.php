@@ -45,6 +45,11 @@ if(isset($_POST['rendeles'])){
     $alert = "<script>alert('Sikeres rendelés!')</script>";
     $_SESSION['sikeresRendeles'] = $alert;
     header('location: italia.php');
+  }else{
+    echo "Nem rendelt semmit! Visszairányítás a főoldalra...";
+    $alert = "Sikertelen rendelés! Nem adott meg mennyiséget egyik tételből sem!";
+    $_SESSION['sikeresRendeles'] = $alert;
+    header('location: italia.php');
   }
 
 }

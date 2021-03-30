@@ -2,7 +2,7 @@
 include('connect.php');
 if (isset($_POST['reg_user'])){
     //inputok begyűjtése
-
+    $errors = array();
     $username = mysqli_real_escape_string($db, $_POST['regUsername']);
     $email = mysqli_real_escape_string($db, $_POST['regEmail']);
     $password_1 = mysqli_real_escape_string($db, $_POST['regPassword']);
@@ -14,12 +14,14 @@ if (isset($_POST['reg_user'])){
     $user = mysqli_fetch_assoc($result);
 
     if($user){ //ha egyezés van
-        if ($user['username'] === $username) {
+        if ($user['felhasznalonev'] == $username) {
             array_push($errors, "Felhasználónév már foglalt!");
+
           }
       
-          if ($user['email'] === $email) {
+          if ($user['email'] == $email) {
             array_push($errors, "Email már foglalt!");
+
           }
     }
 
