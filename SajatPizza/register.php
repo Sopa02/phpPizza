@@ -15,17 +15,12 @@ if (isset($_POST['reg_user'])){
 
     if($user){ //ha egyezés van
         if ($user['felhasznalonev'] == $username) {
-            array_push($errors, "Felhasználónév már foglalt!");
-
-          }
-      
+            header('location: bejelentkezes.php?error=2');
+          }    
           if ($user['email'] == $email) {
-            array_push($errors, "Email már foglalt!");
-
+            header('location: bejelentkezes.php?error=3');
           }
-    }
-
-    if(count($errors) == 0){
+    }else{
         $password = md5($password_1); //Jelszó titkosítása
         $query = "INSERT INTO users (felhasznalonev, email, tel, jelszo)
                 VALUES('$username', '$email', '$tel', '$password')";

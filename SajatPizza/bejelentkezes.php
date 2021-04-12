@@ -23,7 +23,7 @@
         </a>
         <ul class="navbar-nav me-auto mb-1 mb-lg-1">
             <li class="nav-item">
-            <a class="nav-link" href="./kapcsolat.html">Kapcsolat</a>
+            <a class="nav-link" href="#kapcsolat">Kapcsolat</a>
             </li>
         </ul>
     </div>
@@ -52,6 +52,8 @@
             <div class="register col-md-5 col-sm-12">
                 <form action="register.php" id="registerform" method="post">
                     <p>Regisztráció</p>
+                    <?php if(isset($_GET['error'])&&$_GET['error']==2){echo "Ez a felhasználónév már foglalt! <br>";} if(isset($_GET['error'])&&$_GET['error']==3){echo "Ez az email már foglalt! <br>";} ?>
+
                     <label for="regUsername">Felhasználónév:</label>
                     <br>
                     <input type="text" name="regUsername" id="regUsername" maxlength="16" required>
@@ -73,8 +75,24 @@
             </div>
         </div>
 
+        <div id="container" class="kapcsolatCont">
+            <div class="kapcsolatText">
+                <h2 id="kapcsolat">Kapcsolat:</h2>
+                <span class="badge bg-dark">Nyitvatartás:</span>
+                <p>H-V 11:00-22:30</p>
+                <span class="badge bg-dark">Cím:</span>
+                <p>Debrecen, Szabadság u. 24.</p>
+                <span class="badge bg-dark">Telefonszám: </span>
+                <p>(52)013-213</p>
+                <span class="badge bg-dark">E-mail:</span>
+                <p>kapcsolat@italiapizza.hu</p>
+            </div>
+        </div>
+
+
+
     </div>
-    
+    <script src="./script.js"></script>
 
 </body>
 </html>

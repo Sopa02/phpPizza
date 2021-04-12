@@ -25,11 +25,11 @@ function Calculate(event){
         var current = document.getElementById(i);
         price += parseInt(current.dataset.price*current.value);
         if(current.value>0){    //Ha választottunk belőle
-            orderedPizzas += current.dataset.name +"("+current.value+"db) ";
+            orderedPizzas += current.dataset.name +"<span class='badge rounded-pill bg-dark'>"+current.value+"db</span><br>";
         }
     }
 
     //console.log(price);
-    pPrice.innerHTML = price + "Ft";
+    pPrice.innerHTML = "<b>"+price + "Ft</b>";
     pPizzas.innerHTML = orderedPizzas;
 }

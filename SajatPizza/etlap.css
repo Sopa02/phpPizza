@@ -133,6 +133,10 @@ label{
 .vart-ido{
     color:red;
 }
+.checkout .rounded-pill{
+    font-size: 12px;
+    margin-left: 5px;
+}
 
 h2{
     text-align: center;
